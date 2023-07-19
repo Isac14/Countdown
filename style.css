@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 255);
+}
+
+.section-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Roboto', sans-serif;
+    margin: 50px;
+}
+
+img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.info{
+    width: 60%;
+}
+
+h3, h4{
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.title{
+    color: rgb(13, 71, 205);
+}
+
+.info > p{
+    margin: 32px 0;
+    font-size: 1.2rem;
+    color: rgb(67, 67, 67);
+    text-align: justify;
+}
+
+.deadline{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.deadline-format{
+    background-color: rgb(33, 16, 110);
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
+    width: 75px;
+}
+
+@media screen and (max-width: 900px){
+    *{
+        margin: auto;
+        padding: auto;
+        overflow:auto;
+        box-sizing: border-box;
+    }
+    
+   
+
+    .section-center{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img{
+
+        max-width: 90vw;
+        max-height: 500px;
+    }
+
+    .info{
+        width: 70vw;
+    }
+
+    .deadline{
+        display: flex;
+        justify-content: center;
+    }
+}
