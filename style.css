@@ -24,7 +24,6 @@ body {
   align-items: center;
   gap: 20px;
   font-family: "Roboto", sans-serif;
-  margin: 50px;
 }
 
 img {
@@ -40,7 +39,6 @@ img {
 h3,
 h4 {
   letter-spacing: 0.25rem;
-  text-transform: capitalize;
   font-weight: 700;
   font-size: 1.3rem;
   text-align: center;
