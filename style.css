@@ -1,102 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c0d1c2;
+}
+
+.section-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  margin: 50px;
+}
+
+img {
+  max-width: 900px;
+  max-height: 900px;
+  border-radius: 20px;
+}
+
+.info {
+  width: 60%;
+}
+
+h3,
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.title {
+  color: #2e4347;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.info > p {
+  margin: 32px 0;
+  font-size: 1.5rem;
+  color: rgb(67, 67, 67);
+  text-align: center;
+}
+
+.deadline {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.deadline-format {
+  background-color: #2e4347;
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 75px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 900px) and (max-height: 1200px) {
+  * {
     box-sizing: border-box;
-}
+  }
 
-body{
-    height: 100vh;
+  body {
+    overflow: auto;
+  }
+
+  .section-center {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(220, 255, 255);
-}
+    flex-direction: column;
+    gap: 10px;
+  }
 
-.section-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    font-family: 'Roboto', sans-serif;
-    margin: 50px;
-}
-
-img{
-    max-width: 500px;
+  img {
+    margin-top: 20%;
+    max-width: 90vw;
     max-height: 500px;
-}
+  }
 
-.info{
-    width: 60%;
-}
+  .info {
+    width: 70vw;
+  }
 
-h3, h4{
-    letter-spacing: 0.25rem;
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-.title{
-    color: rgb(13, 71, 205);
-}
-
-.info > p{
-    margin: 32px 0;
-    font-size: 1.2rem;
-    color: rgb(67, 67, 67);
-    text-align: justify;
-}
-
-.deadline{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.deadline-format{
-    background-color: rgb(33, 16, 110);
-    color: white;
+  .deadline-format {
     padding: 10px;
-    font-size: 1.3rem;
-    width: 75px;
-}
-
-@media screen and (max-width: 900px) and (max-height: 1200px){
-
-    *{  
-        box-sizing: border-box;
-    }
-
-    body{
-        overflow: auto;
-    }
-
-    .section-center{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    img{
-        margin-top: 20%; 
-        max-width: 90vw;
-        max-height: 500px;
-    }
-
-    .info{
-        width: 70vw;
-    }
-
-    .deadline-format{
-        padding: 10px;
-        font-size: 1rem;
-        width: 55px;
-        box-sizing: content-box;
-    }
+    font-size: 1rem;
+    width: 55px;
+    box-sizing: content-box;
+  }
 }
